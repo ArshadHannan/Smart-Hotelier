@@ -2,8 +2,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #02264c;
 }
+
 
 /* Global button style */
 .button {
@@ -13,8 +13,8 @@ body {
   border: none;
   text-decoration: none;
   outline: none;
-  color: #ffffff;
-  background-color: rgb(0, 120, 212);
+  color:whitesmoke;
+  background-color: #6A5ACD;
   padding: 0.5rem 1.2rem;
   border-radius: 2px;
   font-size: 1rem;
@@ -27,12 +27,12 @@ body {
 
 .button.disabled {
   pointer-events: none;
-  background-color: #cccccc;
+  background-color:whitesmoke;
   color: #666666;
 }
 
 /* Main section */
-.graph{
+.graph {
   padding: 1%;
   margin: 8%;
 }
@@ -64,11 +64,11 @@ body {
 /* Upload box */
 .upload-box {
   font-size: 0.8rem;
-  color: #666666;
+  color:#cccccc;
   cursor: pointer;
   width: 16rem;
   height: 4rem;
-  background: #fff;
+  background:#6A5ACD;
   border: 0.1rem dashed #838388;
   border-radius: 0.4rem;
   display: flex;
@@ -101,21 +101,26 @@ body {
 }
 
 .image-box {
-  position: relative;
   width: 100px;
   height: auto;
-  float: left;
   margin: 2px;
 }
 
 .image-display {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  height: 300px
+  opacity: 0.9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.image-display1 {
+  opacity: 0.9;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo-display {
   margin: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   width: 300px;
 }
 
@@ -183,6 +188,36 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container1 {
+  margin: auto;
+  width: 550px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color:	#483D8B;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border-style: solid;
+  border-color: grey;
+}
+
+.container2 {
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+.container3 {
+  margin: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: 	;
+  margin-bottom: 50px;
+  padding: 50px;
 }
